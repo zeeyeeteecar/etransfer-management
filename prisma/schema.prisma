@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model tbl_ETransferInfo {
+  id          Int      @id @default(autoincrement())
+  fname       String   @db.VarChar(100)
+  lname       String   @db.VarChar(100)
+  userAddress String   @db.VarChar(200)
+  userTel     String   @db.VarChar(20)
+  useremail   String   @db.VarChar(100)
+  todaydate   DateTime @db.Date
+  RegDate     DateTime @db.Date
+  RegTime     DateTime @db.Time(0)
+  userIP      String   @db.VarChar(20)
+}
+
