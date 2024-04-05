@@ -55,7 +55,7 @@ export default async function Header() {
         <TokenInfo />{" "}
       </div>
 
-      <section className="border-0 h-[650px] w-[1600px] bg-slate-50 mx-auto flex flex-col rounded-t-lg">
+      <section className="border-4 h-[800px] w-[1600px] bg-slate-50 mx-auto flex flex-col rounded-t-lg">
         <div
           id="titleBar"
           className="w-full h-[50px] bg-slate-700 rounded-t-lg"
